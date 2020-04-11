@@ -218,7 +218,7 @@ class ClickerGame(Widget):
         self.add_widget(Enemy(type, center = center))
 
     def upgrade_feedpower(self):
-        if self.gold >= self.feedpower_upgrade_cost and self.feedpower < 3:
+        if self.gold >= self.feedpower_upgrade_cost and self.feedpower < 10:
             self.add_gold(-self.feedpower_upgrade_cost)
             self.feedpower += 1
             self.feedpower_upgrade_cost = int(self.feedpower_upgrade_cost * 4)
